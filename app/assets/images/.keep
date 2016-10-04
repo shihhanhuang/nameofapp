@@ -1,0 +1,1 @@
+<%= image_tag("east-4.jpg") %>

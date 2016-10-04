@@ -1,3 +1,25 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+//font!//
+
+h1 {
+	font-family: 'Shrikhand', curisve;
+	color: Silver;
+	font-size: 3em;
+	text-align: center;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.hero {
+	max-width: 100%
+}
