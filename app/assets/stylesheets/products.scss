@@ -1,3 +1,25 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+table#table1 {
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+th {
+	height: 30px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+
+th, td {
+	vertical-align: center;
+	border-bottom: 1px solid #ddd;
+	padding: 15px;
+}
+
+
+
+
+
