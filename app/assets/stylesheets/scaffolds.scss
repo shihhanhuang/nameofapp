@@ -4,14 +4,14 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  margin: 33px;
+  margin: 0px;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  margin: 33px;
+  margin: 15px;
 }
 
 pre {
@@ -86,4 +86,8 @@ div {
 
 label {
   display: block;
+}
+
+.alert {
+  padding: 5px;
 }

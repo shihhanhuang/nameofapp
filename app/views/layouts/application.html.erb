@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nameofapp</title>
+    <title>Berlin Bikes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -50,8 +50,11 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-  <p class="notice"><%= notice %></p>
+<% if notice %>
+  <p id="notice" class="alert alert-info"><%= notice %></p>
+<if alert %>
   <p class="alert"><%= alert %></p>
+<% end %>
 
     <%= yield %>
 
