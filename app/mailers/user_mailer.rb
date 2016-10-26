@@ -7,5 +7,11 @@ class UserMailer < ApplicationMailer
 					:to => 'shihhan.huang@gmail.com',
 					:subject => "Benibeni App contact from #{name}")
 	end
+
+	def welcome(user)
+		@appname = "Berlin Bikes"
+		mail( :to => user.email,
+					: subject => "Welcome to #{@appname}!")
+	end
 			
 end
