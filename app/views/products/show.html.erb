@@ -33,6 +33,12 @@
     <%= @product.pricing %>
   </p>
 
+  <div class="stripepayment"> <%= form_tag '/payments/create' do %>
+        <%= render partial: 'shared/stripe_checkout_button' %>
+        <% end %> 
+  </div>
+
+  <br>
   <br>
   <%= render partial: 'new_comment' %>
   <br>
@@ -40,6 +46,7 @@
     <strong>Average Rating:</strong><br>
     <div class="rated" data-score="<%= @product.average_rating %>"></div>
   </p>
+
 
   <p><%= render partial: 'comments' %></p>
   <p><%= will_paginate @comments %></p>
