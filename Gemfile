@@ -37,6 +37,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
+  # 6.4 Factory Girl
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :development do
@@ -62,3 +64,4 @@ gem 'will_paginate', '~> 3.1.0'
 
 # 6.3 Functional tests
 gem 'rails-controller-testing'
+
