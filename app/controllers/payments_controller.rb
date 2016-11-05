@@ -15,8 +15,8 @@ class PaymentsController < ApplicationController
 
 			if charge.paid
 				Order.create(
-					:product_id => @product
-					:user_id => @user
+					:product_id => @product,
+					:user_id => @user,
 					:total => @product.pricing
 					)
 
