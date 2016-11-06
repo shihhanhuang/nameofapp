@@ -4,5 +4,5 @@
   data-image="<%= @product.image_url %>"
   data-name="<%= @product.name %>"
   data-description="<%= @product.description %>"
-  data-amount="<%= (@product.pricing*100).to_i %>">
+  data-amount="<%= (@product.pricing.to_i)*100 %>">
 </script>
