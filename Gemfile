@@ -39,6 +39,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   # 6.4 Factory Girl
   gem "factory_girl_rails", "~> 4.0"
+  gem "brakeman", :require => false
 end
 
 group :development do
