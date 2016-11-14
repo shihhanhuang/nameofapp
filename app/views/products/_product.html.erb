@@ -1,4 +1,5 @@
-<div class="col-sm-2 col-md-4">
+<div class="col-sm-2 col-md-4 productindex">
+ <% cache product do %>
   <h2><%= product.name %></h2>
   <%= image_tag(product.image_url, class: "img-responsive saleproduct") %>
   <p><%= product.description %></p>
@@ -6,7 +7,8 @@
   <p><%= link_to 'Show', product %>
   <%= link_to 'Edit', edit_product_path(product) %>
   <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-  </div> <!--/col-->
+ <% end %>
+</div> <!--/col-->
 
 
 

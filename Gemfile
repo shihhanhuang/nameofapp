@@ -69,3 +69,6 @@ gem 'rails-controller-testing'
 #6.5 Stripe - credit card payments
 gem 'stripe'
 
+#6.11 Caching
+gem 'dalli'
+

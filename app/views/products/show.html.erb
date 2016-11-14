@@ -1,5 +1,6 @@
 <div class="container-fluid product_show">
 
+<% cache @product do %>
 <div class="row">
   <div class="col-md-12">
       <%= image_tag(@product.image_url, class: "img-responsive thumbnail img-zoom", data_zoom_image: "@product.image_url") %>
@@ -32,6 +33,8 @@
     <strong>Pricing:</strong><br>
     <%= @product.pricing %>
   </p>
+
+  <% end %> 
 
   <div class="stripepayment"> 
   <% if signed_in? %>
