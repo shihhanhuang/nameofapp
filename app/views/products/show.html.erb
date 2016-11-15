@@ -54,6 +54,8 @@
     <div class="rated #average-rating" data-score="<%= @product.average_rating %>"></div>
   </p>
 
+  <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+
 
   <p><%= render partial: 'comments' %></p>
   <p><%= will_paginate @comments %></p>
