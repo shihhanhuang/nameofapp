@@ -72,3 +72,6 @@ gem 'stripe'
 #6.11 Caching
 gem 'dalli'
 
+#6.12 Performance improvement
+gem 'redis-rails'
+
