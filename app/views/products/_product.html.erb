@@ -5,9 +5,13 @@
   <p><%= product.description %></p>
   <h2>$ <%= product.pricing %></h2>
   <p><%= link_to 'Show', product %>
-  <%= link_to 'Edit', edit_product_path(product) %>
-  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
- <% end %>
+ <% end %> 
+
+  <% if signed_in? && current_user.admin? %>
+  	<%= link_to ('Edit').html_safe, edit_product_path(product) %>
+  	<%= link_to 'Destroy'.html_safe, product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <% end %>
+
 </div> <!--/col-->
 
 
